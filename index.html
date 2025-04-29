@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Simple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            top: 0;
+        }
+        main {
+            margin-top: 80px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        p {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página</h1>
+    </header>
+    <main>
+        <h2>¡Hola, mundo!</h2>
+        <p>Esta es una página web simple creada para ser desplegada en Netlify. Puedes personalizar este contenido editando el archivo HTML.</p>
+        <a href="#" class="button">Explorar más</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mi Página Simple. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
