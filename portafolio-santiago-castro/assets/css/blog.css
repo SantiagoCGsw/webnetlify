@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
+    background: #1E2A44;
+    color: #A5CFFF;
+}
+
+#bgCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #3F5BA6;
+    box-shadow: 0 0 10px rgba(63, 91, 166, 0.5);
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #A5CFFF;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #A5CFFF;
+    margin: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #A5CFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: #87CEEB;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(30, 42, 68, 0.8);
+    border: 1px solid #3F5BA6;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(63, 91, 166, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+section.glow {
+    box-shadow: 0 0 15px rgba(63, 91, 166, 0.8);
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #A5CFFF;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #3F5BA6;
+    margin: 0.5rem 0;
+}
+
+p, li {
+    color: #A5CFFF;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.story {
+    padding: 1rem;
+    border-radius: 6px;
+    background: rgba(63, 91, 166, 0.2);
+}
+
+.story .read-more {
+    background: #3F5BA6;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.story .read-more:hover {
+    background: #87CEEB;
+}
+
+.story .full-story {
+    margin-top: 1rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #A5CFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #87CEEB;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px solid #3F5BA6;
+    box-shadow: 0 0 10px rgba(63, 91, 166, 0.5);
+    color: #A5CFFF;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    section {
+        padding: 1rem;
+    }
+    .story-grid {
+        grid-template-columns: 1fr;
+    }
+}

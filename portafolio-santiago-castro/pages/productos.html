@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es" page="productos">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de productos de Santiago Castro González">
+    <meta name="author" content="Santiago Castro González">
+    <title>Productos - Santiago Castro González</title>
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/productos.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "name": "Auriculares Inalámbricos",
+          "description": "Auriculares con cancelación de ruido y batería de larga duración.",
+          "image": "https://portafolisw.netlify.app/assets/images/producto1.jpg",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.amazon.com/auriculares-inalambricos",
+            "priceCurrency": "USD",
+            "price": "59.99",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Teclado Mecánico",
+          "description": "Teclado mecánico RGB ideal para gaming.",
+          "image": "https://portafolisw.netlify.app/assets/images/producto2.jpg",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.ebay.com/teclado-mecanico",
+            "priceCurrency": "USD",
+            "price": "89.99",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "Mouse Ergonómico",
+          "description": "Mouse ergonómico con alta precisión para trabajo y juegos.",
+          "image": "https://portafolisw.netlify.app/assets/images/producto3.jpg",
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.walmart.com/mouse-ergonomico",
+            "priceCurrency": "USD",
+            "price": "29.99",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <canvas id="bgCanvas" aria-hidden="true"></canvas>
+    <header>
+        <h1>Santiago Castro González - Productos</h1>
+        <nav>
+            <ul>
+                <li><a href="../pages/index.html" aria-label="Volver al portafolio" id="menu-home">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="productos">
+            <h2>Catálogo de Productos</h2>
+            <div id="product-list" class="product-list">
+                <div class="product-item" itemscope itemtype="https://schema.org/Product">
+                    <h4 itemprop="name">Auriculares Inalámbricos</h4>
+                    <img src="../assets/images/producto1.jpg" alt="Auriculares Inalámbricos" itemprop="image">
+                    <p itemprop="description">Auriculares con cancelación de ruido y batería de larga duración.</p>
+                    <a href="https://www.amazon.com/auriculares-inalambricos" target="_blank" rel="noopener noreferrer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="59.99">59.99</span> - Comprar en Amazon
+                    </a>
+                </div>
+                <div class="product-item" itemscope itemtype="https://schema.org/Product">
+                    <h4 itemprop="name">Teclado Mecánico</h4>
+                    <img src="../assets/images/producto2.jpg" alt="Teclado Mecánico" itemprop="image">
+                    <p itemprop="description">Teclado mecánico RGB ideal para gaming.</p>
+                    <a href="https://www.ebay.com/teclado-mecanico" target="_blank" rel="noopener noreferrer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="89.99">89.99</span> - Comprar en eBay
+                    </a>
+                </div>
+                <div class="product-item" itemscope itemtype="https://schema.org/Product">
+                    <h4 itemprop="name">Mouse Ergonómico</h4>
+                    <img src="../assets/images/producto3.jpg" alt="Mouse Ergonómico" itemprop="image">
+                    <p itemprop="description">Mouse ergonómico con alta precisión para trabajo y juegos.</p>
+                    <a href="https://www.walmart.com/mouse-ergonomico" target="_blank" rel="noopener noreferrer" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="29.99">29.99</span> - Comprar en Walmart
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Santiago Castro González. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/productos.js"></script>
+</body>
+</html>

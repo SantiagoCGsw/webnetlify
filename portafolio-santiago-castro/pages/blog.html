@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es" page="blog">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de historias de terror de Santiago Castro González">
+    <meta name="author" content="Santiago Castro González">
+    <title>Blog - Santiago Castro González</title>
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "La Sombra en el Espejo",
+          "description": "Una historia de terror sobre un espejo maldito.",
+          "url": "https://portafolisw.netlify.app/pages/blog.html#la-sombra",
+          "datePublished": "2025-05-01",
+          "author": {
+            "@type": "Person",
+            "name": "Santiago Castro González"
+          }
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "El Reloj que Nunca Para",
+          "description": "Una historia de terror sobre un reloj embrujado.",
+          "url": "https://portafolisw.netlify.app/pages/blog.html#el-reloj",
+          "datePublished": "2025-05-15",
+          "author": {
+            "@type": "Person",
+            "name": "Santiago Castro González"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <canvas id="bgCanvas" aria-hidden="true"></canvas>
+    <header>
+        <h1>Santiago Castro González - Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="../pages/index.html" aria-label="Volver al portafolio" id="menu-home">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="blog">
+            <h2>Blog de Historias de Terror</h2>
+            <div class="story-grid">
+                <article class="story" id="la-sombra">
+                    <h3>La Sombra en el Espejo</h3>
+                    <p>Era una noche fría de octubre cuando Ana decidió limpiar el viejo espejo que había encontrado en el ático. Mientras lo frotaba, notó un reflejo que no era el suyo: una figura oscura con ojos brillantes la observaba desde el otro lado...</p>
+                    <button class="read-more" aria-expanded="false" aria-controls="full-story-1">Leer más</button>
+                    <div class="full-story" id="full-story-1" style="display: none;">
+                        <p>La figura comenzó a susurrar su nombre, "Ana... Ana...". El corazón de Ana se detuvo por un momento. Intentó gritar, pero su voz no salía. La sombra extendió una mano hacia el cristal, como si quisiera atravesarlo. Ana dejó caer el espejo, que se rompió en mil pedazos. Pero cada fragmento seguía reflejando esos ojos brillantes, y el susurro se convirtió en un grito ensordecedor. Desde esa noche, Ana nunca volvió a mirarse en un espejo, pero siempre siente una presencia detrás de ella.</p>
+                    </div>
+                </article>
+                <article class="story" id="el-reloj">
+                    <h3>El Reloj que Nunca Para</h3>
+                    <p>Carlos heredó un reloj antiguo de su abuelo. A pesar de que no le había dado cuerda en años, el reloj seguía funcionando, marcando las horas con un tic-tac inquietante...</p>
+                    <button class="read-more" aria-expanded="false" aria-controls="full-story-2">Leer más</button>
+                    <div class="full-story" id="full-story-2" style="display: none;">
+                        <p>Cada noche, a las 3:00 a.m., el reloj emitía un sonido diferente: un gemido profundo, como si alguien estuviera llorando. Carlos intentó detenerlo, pero el mecanismo no se detenía. Una noche, el gemido se convirtió en palabras: "Es tu hora, Carlos". El reloj marcó las 3:01, y la habitación se llenó de un frío glacial. Carlos nunca despertó, pero el reloj sigue funcionando, ahora en manos de un nuevo dueño.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Santiago Castro González. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/blog.js"></script>
+</body>
+</html>
